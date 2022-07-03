@@ -36,7 +36,7 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="contact.html" class="nav-item nav-link active">Iniciar sesión</a>
+                        <a href="Login.html" class="nav-item nav-link active">Iniciar sesión</a>
                     </div>
                 </div>
             </div>
@@ -61,19 +61,19 @@
                     </div>
                     <div class="col-md-6">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate" action="blog.html">
+                        <form name="sentMessage" id="Loginform" novalidate="novalidate" action="Ordenar.html">
                             <div class="control-group">
                             <h4>Ingresa a través de:</h4>
-                            <button type="button" class="btn btn-link btn-floating mx-1">
+                            <button type="button" id="fblogin" class="btn btn-primary btn-floating mx-1">
                                 <i class="fab fa-facebook-f"></i>
                               </button>
-                      
-                              <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-google"></i>
-                              </button>
-                      
-                              <button type="button" class="btn btn-link btn-floating mx-1">
+                  
+                              <button type="button" id="twlogin" class="btn btn-primary btn-floating mx-1">
                                 <i class="fab fa-twitter"></i>
+                              </button>
+            
+                              <button type="button" id="googlelogin" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-google"></i>
                               </button>
                             </div>
                             <div class="control-group">
@@ -103,12 +103,6 @@
         <script src="lib/tempusdominus/js/moment.min.js"></script>
         <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
         <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="./main.js" type="module"></script>
     </body>
 </html>
